@@ -1,10 +1,10 @@
 variable "project" {
   description = "The project name"
   type        = string
-  default     = "terraform-278708"
+  default     = ""
 }
 variable "region" {
   description = "Region of the project"
   type        = string
-  default     = "europe-west3"
+  default     = ""
 }
