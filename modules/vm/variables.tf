@@ -1,3 +1,8 @@
+variable "enable_public_ip" {
+  description = "Name of vm instance"
+  type = bool
+  default = true
+}
 variable "name" {
   description = "Name of vm instance"
   type = string
@@ -21,6 +26,12 @@ variable "image" {
 variable "network" {
   description = "Network name of vm instance"
   type = string
+  default = ""
+}
+variable "subnetwork" {
+  description = "Subnetwork name of vm instance"
+  type = string
+  default = ""
 }
 variable "nat_ip" {
   description = "External ip address of vm instance"
